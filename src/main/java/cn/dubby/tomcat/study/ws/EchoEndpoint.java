@@ -32,7 +32,7 @@ public class EchoEndpoint extends Endpoint {
             if (session == null)
                 return;
 
-            System.out.println(session.getId() + "\t" + message);
+//            System.out.println(session.getId() + "\t" + message);
             try {
                 session.getBasicRemote().sendText(message, last);
             } catch (IOException e) {
